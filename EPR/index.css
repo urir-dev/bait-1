@@ -44,12 +44,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
   .lab {
     font-size: 200%;
-    padding-left: 3%;
     font-family: fantasy;
     text-shadow: rgb(80, 80, 80) 10px 10px 30px ;
   }
 
   .inp {
+    padding-left: 3%;
     text-align: center;
     max-width: 30%;
     font-size: 200%;
