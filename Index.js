@@ -48,6 +48,7 @@ document.getElementById("submit")
   else if (i == 6 {
     document.getElementById("ktxt").innerHTML = "so your name is: '" + document.getElementById("inpt").value + "'" 
     var nam = document.getElementById("inpt").value
+    console.log(nam)
     document.getElementById("inpt").value = ""
     document.getElementById("instruct").innerHTML = "Ok " + nam + ", Would you Write something again?"
     document.getElementById("submit").innerHTML = "Submit" 
@@ -57,19 +58,25 @@ document.getElementById("submit")
   else if (i == 7 {
     document.getElementById("instruct").innerHTML = ""
     var itt = document.getElementById("inpt").value
+    console.log(itt)
     document.getElementById("ktxt").innerHTML = "Great, " + nam + ". You said:'" + itt + "'."
     var n = itt.search("a")
     var m = itt.search("5")
     if (n != -1 or m != -1) {
+       console.log("Found")
        document.getElementById("txt").style.backGround-Color = "Green";
        }
     else
        {
+        console.log("No Found")
         document.getElementById("txt").style.backGround-Color = "Red";
         }
   }
    
- 
+ if i == 7 {
+   document.getElementById("submit").innerHTML = "Write Things!" 
+ }
  i = i + 1
+ 
 }
 
