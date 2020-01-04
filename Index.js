@@ -71,10 +71,16 @@ document.getElementById("submit")
         console.log("No Found")
         document.getElementById("txt").style.backGround-Color = "Red";
         }
+    document.getElementById("submit").innerHTML = "Restart" 
+     
   }
+
+  else if (i == 8 {
+    
+
+  }
+
    
- if i == 7 {
-   document.getElementById("submit").innerHTML = "Write Things!" 
  }
  i = i + 1
  
