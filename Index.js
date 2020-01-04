@@ -7,22 +7,30 @@ var divid = 213 / 51
 var addi = 12 + 345
 var subi = 233 - 56
 
+console.log("declerations")
+
 document.getElementById("submit")
     .addEventListener("click", function () {
+  console.log("First click")
 
   if (i == 0) {
     document.getElementById("txt").innerHTML = "Hello World!";
+    console.log("Says hello")
   } else if (i == 1 {
+    console.log("Multiply " + multipl)
     document.getElementById("txt").innerHTML = multipl;
   }
     else if (i == 2 {
+    console.log("Divide " + divid)
     document.getElementById("txt").innerHTML = divid;
   }
     else if (i == 3 {
+    console.log(multipl "/ 2 - " + divid)
     document.getElementById("txt").innerHTML = (multipl / 2) - divid;
   }
 
     else if (i == 4 {
+    console.log("write something")
     document.getElementById("qst").style.visibility="visible"
     document.getElementById("submit").innerHTML = "OK it's ready" 
 
@@ -46,9 +54,9 @@ document.getElementById("submit")
   }
 
   else if (i == 7 {
-    document.getElementById("txt").innerHTML = "Great, " + nam + ". You said:'" + itt + "'."
     document.getElementById("instruct").innerHTML = ""
     var itt = document.getElementById("inpt").value
+    document.getElementById("txt").innerHTML = "Great, " + nam + ". You said:'" + itt + "'."
     var n = itt.search("a")
     var m = itt.search("5")
     if (n != -1 or m != -1) {
