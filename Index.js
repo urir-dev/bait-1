@@ -46,13 +46,18 @@ document.getElementById("submit")
   }
 
   else if (i == 7 {
-    document.getElementById("txt").innerHTML = "Great."
+    document.getElementById("txt").innerHTML = "Great, " + nam + ". You said:'" + itt + "'."
+    document.getElementById("instruct").innerHTML = ""
     var itt = document.getElementById("inpt").value
     var n = itt.search("a")
     var m = itt.search("5")
-    if (n == 1 {
-    document.getElementById("txt").innerHTML = multipl;
-  }
+    if (n != -1 or m != -1) {
+       document.getElementById("frm").style.backGround-Color = "Green";
+       }
+    else
+       {
+        document.getElementById("frm").style.backGround-Color = "Red";
+        }
   }
    
  
