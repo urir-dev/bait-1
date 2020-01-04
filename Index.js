@@ -47,8 +47,9 @@ document.getElementById("submit")
 
   else if (i == 7 {
     document.getElementById("txt").innerHTML = "Great."
-    var itt = document.getElementById("inpt").value
-    if (itt == 0) {
+    var string itt = document.getElementById("inpt").value
+    var n = itt.search("a")
+    var m = itt.search("5")
     document.getElementById("txt").innerHTML = "Hello World!";
   } else if (i == 1 {
     document.getElementById("txt").innerHTML = multipl;
