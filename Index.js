@@ -14,19 +14,19 @@ document.getElementById("submit")
   console.log("First click")
 
   if (i == 0) {
-    document.getElementById("txt").innerHTML = "Hello World!";
+    document.getElementById("ktxt").innerHTML = "Hello World!";
     console.log("Says hello")
   } else if (i == 1 {
     console.log("Multiply 213 by 51 = " + multipl)
-    document.getElementById("txt").innerHTML = multipl;
+    document.getElementById("ktxt").innerHTML = multipl;
   }
     else if (i == 2 {
     console.log("Divide 213 by 51 = " + divid)
-    document.getElementById("txt").innerHTML = divid;
+    document.getElementById("ktxt").innerHTML = divid;
   }
     else if (i == 3 {
     console.log(multipl + " / 2 - " + divid)
-    document.getElementById("txt").innerHTML = (multipl / 2) - divid;
+    document.getElementById("ktxt").innerHTML = (multipl / 2) - divid;
   }
 
     else if (i == 4 {
@@ -38,7 +38,7 @@ document.getElementById("submit")
     
     else if (i == 5 {
     console.log("write name")
-    document.getElementById("txt").innerHTML = "you said:'" + document.getElementById("inpt").value + "'" 
+    document.getElementById("ktxt").innerHTML = "you said:'" + document.getElementById("inpt").value + "'" 
     document.getElementById("inpt").value = ""
     document.getElementById("instruct").innerHTML = "Now, What is your name?"
     document.getElementById("submit").innerHTML = "That's my name" 
@@ -46,7 +46,7 @@ document.getElementById("submit")
   }
 
   else if (i == 6 {
-    document.getElementById("txt").innerHTML = "so your name is: '" + document.getElementById("inpt").value + "'" 
+    document.getElementById("ktxt").innerHTML = "so your name is: '" + document.getElementById("inpt").value + "'" 
     var nam = document.getElementById("inpt").value
     document.getElementById("inpt").value = ""
     document.getElementById("instruct").innerHTML = "Ok " + nam + ", Would you Write something again?"
@@ -61,11 +61,11 @@ document.getElementById("submit")
     var n = itt.search("a")
     var m = itt.search("5")
     if (n != -1 or m != -1) {
-       document.getElementById("frm").style.backGround-Color = "Green";
+       document.getElementById("txt").style.backGround-Color = "Green";
        }
     else
        {
-        document.getElementById("frm").style.backGround-Color = "Red";
+        document.getElementById("txt").style.backGround-Color = "Red";
         }
   }
    
