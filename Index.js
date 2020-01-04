@@ -17,6 +17,6 @@ document.getElementById("submit")
     document.getElementById('txt').innerHTML = divid;
   }
     else if (i == 3 {
-    document.getElementById('txt').innerHTML = 213 / 51;
+    document.getElementById('qst').style.visibility='visible'
   }
 
