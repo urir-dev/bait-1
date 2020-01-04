@@ -29,10 +29,30 @@ document.getElementById("submit")
   }
     
     else if (i == 5 {
-    document.getElementById("txt").innerHTML = "you said:'" & 
-    document.get
+    document.getElementById("txt").innerHTML = "you said:'" + document.getElementById("inpt").value + "'" 
+    document.getElementById("inpt").value = ""
+    document.getElementById("instruct").innerHTML = "Now, What is your name?"
     document.getElementById("submit").innerHTML = "That's my name" 
 
+  }
+
+  else if (i == 6 {
+    document.getElementById("txt").innerHTML = "so your name is: '" + document.getElementById("inpt").value + "'" 
+    var nam = document.getElementById("inpt").value
+    document.getElementById("inpt").value = ""
+    document.getElementById("instruct").innerHTML = "Ok " + nam + ", Would you Write something again?"
+    document.getElementById("submit").innerHTML = "Submit" 
+
+  }
+
+  else if (i == 7 {
+    document.getElementById("txt").innerHTML = "Great."
+    var itt = document.getElementById("inpt").value
+    if (itt == 0) {
+    document.getElementById("txt").innerHTML = "Hello World!";
+  } else if (i == 1 {
+    document.getElementById("txt").innerHTML = multipl;
+  }
   }
    
  
