@@ -17,15 +17,15 @@ document.getElementById("submit")
     document.getElementById("txt").innerHTML = "Hello World!";
     console.log("Says hello")
   } else if (i == 1 {
-    console.log("Multiply " + multipl)
+    console.log("Multiply 213 by 51 = " + multipl)
     document.getElementById("txt").innerHTML = multipl;
   }
     else if (i == 2 {
-    console.log("Divide " + divid)
+    console.log("Divide 213 by 51 = " + divid)
     document.getElementById("txt").innerHTML = divid;
   }
     else if (i == 3 {
-    console.log(multipl "/ 2 - " + divid)
+    console.log(multipl + " / 2 - " + divid)
     document.getElementById("txt").innerHTML = (multipl / 2) - divid;
   }
 
@@ -37,6 +37,7 @@ document.getElementById("submit")
   }
     
     else if (i == 5 {
+    console.log("write name")
     document.getElementById("txt").innerHTML = "you said:'" + document.getElementById("inpt").value + "'" 
     document.getElementById("inpt").value = ""
     document.getElementById("instruct").innerHTML = "Now, What is your name?"
