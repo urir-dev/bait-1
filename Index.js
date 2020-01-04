@@ -29,8 +29,9 @@ document.getElementById("submit")
   }
     
     else if (i == 5 {
-    document.getElementById("qst").style.visibility="visible"
-    document.getElementById("submit").innerHTML = "OK it's ready" 
+    document.getElementById("txt").innerHTML = "you said:'" & 
+    document.get
+    document.getElementById("submit").innerHTML = "That's my name" 
 
   }
    
