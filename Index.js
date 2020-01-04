@@ -75,13 +75,17 @@ document.getElementById("submit")
      
   }
 
-  else if (i == 8 {
-    
+  else if (i == 8)
 
+  {
+   
+    location.reload();
+ 
   }
 
    
  }
+
  i = i + 1
  
 }
