@@ -1,14 +1,21 @@
 
 
 console.log("Start")
-
+var i = 0
 
 document.getElementById("submit")
     .addEventListener("click", function () {
-        console.log("Submit!");
-        console.log(document.getElementById("userName").value);
-        console.log(document.getElementById("password").value);
-        console.log(document.getElementById("age").value);
-    });
 
-document.getElementById('log').innerHTML = "text";
+  if (i == 0) {
+    document.getElementById('txt').innerHTML = "Hello World!";
+  } else if (i == 1 {
+    document.getElementById('txt').innerHTML = 213 * 51;
+  }
+    else if (i == 2 {
+    document.getElementById('txt').innerHTML = 213 / 51;
+
+            }
+
+
+            }
+
