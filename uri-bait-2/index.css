@@ -142,6 +142,7 @@ width: 300px;
     font-size: 180%;
     border-radius:36px;
     text-align: right;
+    border-style:none;
   }
   .field label{
     font-family: 'gutman','david','arial';
