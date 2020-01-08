@@ -68,12 +68,12 @@ body
 
 .mouth
 {
-    height: 50%x;
-    width: 60px;
+    height: 50%;
+    width: 140px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     margin: auto;
-    box-shadow: 10px 10px 42px 0px rgb(0, 0, 0);
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
     outline: solid 1px blue;
 
 }
