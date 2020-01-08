@@ -148,7 +148,7 @@ width: 300px;
     font-size: 200%;
     padding-left: 30px;
     margin-left:auto;
-    text-shadow:1px 1px 5px rgb(6, 47, 77);
+    text-shadow:1px 1px 3px rgb(6, 47, 77);
   }
   
 .fieldK label{
@@ -157,7 +157,7 @@ width: 300px;
   padding-left: 30px;
   margin-left:auto;
   color:rgb(255, 255, 255); 
-  text-shadow: 1px 2px 1px #062038;
+  text-shadow: 1px 2px 1px rgb(14, 52, 82);
 
 }
 
