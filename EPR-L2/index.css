@@ -1,0 +1,40 @@
+h1{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.frm {
+width: 40%;
+border-radius: 10px;
+margin: auto;
+background-color: aquamarine;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+
+}
+
+.field{
+
+font-family: 'Times New Roman', Times, serif;
+padding-bottom: 3%;
+margin: auto;
+text-align: center;
+
+}
+
+.butto
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    text-align: center;
+    width: 20%;
+}
+
+.wrn
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    text-align: center;
+}

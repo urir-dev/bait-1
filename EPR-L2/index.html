@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <form class="frm" action="" id="registerForm">
+
+        <h1>Login</h1>
+        <hr>
+        <h2 id="warn" class="wrn"></h2>
+        <hr>
+        <div class="field">
+
+            <label for="firstName">First Name</label>
+            <Input required id="firstName" name="firstName" type="text">
+        </div>
+
+        <div class="field">
+
+            <label for="lastName">Last Name</label>
+            <Input id="lastName" name="lastName" type="text">
+
+        </div>
+
+        <div class="field">
+
+            <label for="age">Age</label>
+            <Input required id="age" name="age" min=18 type="number">
+
+        </div>
+
+        <div class="field">
+
+            <label for="password">Password</label>
+            <Input required id="password" name="password" type="password">
+
+        </div>
+
+        <div class="field">
+
+            <label for="password2">Write Password Again</label>
+            <Input required id="password2" name="password2" type="password">
+
+        </div>
+
+        <div></div>
+
+
+        <button>submit</button>
+
+
+
+    </form>
+    <script src="./validation/form.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
