@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="heb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>משימת בית 2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="form">
+
+        <h1 class="title">דף ניהול - עמותת התנדבות התנדבותית</h1>
+
+    </div> 
+
+    <form id="regForm">
+
+        <div class="formY">
+
+            <div class="fieldK">
+
+                <label>התנדבות</label>
+
+                <hr>
+
+            </div>
+
+            <div class="field">
+
+                <label for="firstName">שם התנדבות</label>
+
+            </div>
+
+             
+            <div class="inpfield">
+
+                <input type="text" name="hitName" id="hitName"
+                minlength="3" required>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="description">תיאור</label>
+            
+            </div>
+            
+            <div class="inpfield">
+
+                <input type="text" name="description" id="description" minlength="20" required>
+
+            </div>  
+
+            
+            <div class="field">
+
+                <label for="population">אוכלוסיה</label required>
+            
+            </div>    
+
+            <div class="inpfield">
+
+                <div class="selectWrapper">
+                    <select class="selectBox" id="population" name="population" required>
+                        <option value="ילדים">ילדים</option>
+                        <option value="נוער">נוער</option>
+                        <option value="חיות">חיות</option>
+                        <option value="מבוגרים">מבוגרים</option>
+                    </select> 
+                </div>
+                
+                
+            </div>
+
+            
+            <div class="field">
+
+                <label for="weekday">יום בשבוע</label required>
+            
+            </div>
+
+            <div class="inpfield">
+
+                <div class="selectWrapper">
+                    <select class="selectBox" id="weekday" name="weekday" required>
+                        <option value="ראשון">ראשון</option>
+                        <option value="שני">שני</option>
+                        <option value="שלישי">שלישי</option>
+                        <option value="רביעי">רביעי</option>
+                        <option value="חמישי">חמישי</option>
+                        <option value="שישי">שישי</option>
+                        <option value="שבת">שבת</option>
+                    </select> 
+                </div>
+
+
+            </div>
+            
+
+
+            <div class="field">
+
+                <label for="houratday">שעה</label >
+                    
+            </div>
+
+            <div class="inpfield">
+
+                <button id="hourdown" class="Hbutton">-</button> 
+                <label class="tim" id="houratday" name="houratday">12:00</label>
+                <button  id="hourup" class="Hbutton">+</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="formY">
+
+            <div class="fieldK">
+
+                <label>כתובת</label>
+
+            </div>
+
+            <hr>
+            
+            <div class="field">
+
+                <label for="city">עיר</label>
+
+                
+                <div class="inpfield">
+
+                    <input type="text" name="city" id="city" minlength="2" required>
+
+                </div>  
+
+                <label for="city">רחוב</label>
+
+                
+                <div class="inpfield">
+
+                    <input  type="text" name="street" id="street" minlength="2" required>
+
+                </div>  
+
+                <label for="city">מספר בית</label>
+
+                
+                <div class="inpfield">
+
+                    <input type="number" min="1" name="housenum" id="housenum" required>
+
+                </div>  
+                    
+            </div>
+
+        </div>
+
+        <div class="formY">
+
+            
+            <div class="fieldK">
+
+                <label>פרטי יצירת קשר</label>
+
+                <hr>
+
+            </div>
+
+
+            <label for="city">אימייל</label>
+
+                
+            <div class="inpfield">
+
+                <input type="email" name="mail" id="mail" required>
+
+            </div>  
+
+
+
+
+        </div>
+
+
+        <div class="formY">
+            
+            
+            <div class="fieldK">
+
+                <label>סיימתי</label>
+
+                <hr>
+
+            </div>
+
+            <div class="field">
+
+                <button id="submit" class="button">שלח התנדבות</button>
+
+            </div>
+
+        </div>
+
+
+    </form>
+    <script src="./clock/clock.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
