@@ -1,0 +1,33 @@
+
+.highLight{
+
+    color: greenyellow;
+    background-color: black;
+
+}
+
+.frame{
+
+width: 40%;
+border-radius: 10px;
+margin: auto;
+background-color: #dbece8;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+
+}
+
+
+.highLights{
+
+    font-weight: bolder;
+
+}
+
+.highlighto{
+
+    border-color: chocolate;
+    border-width: 1px;
+
+}
