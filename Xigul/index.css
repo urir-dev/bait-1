@@ -1,0 +1,17 @@
+.square{
+    height: 100px;
+    width: 100px;
+    outline: solid rgb(6, 49, 49) 2px;
+    background-color: rgb(245, 221, 175);
+    font: bolder;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.grd{
+
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    
+}
