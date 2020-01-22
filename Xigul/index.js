@@ -1,6 +1,8 @@
-var nexTurn = 'X',
+var nexTurn = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>',
 xTurn = 'x',
 oTurn = 'O';
+srcOfPizza = '<img src=https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg size=auto>'
+srcOfPokemon = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>'
 
 score = ['','','','','','','','',''];
 
@@ -30,7 +32,7 @@ function setNextTitle() {
 function markStep(tile) {
     if (!$(tile).text()){
 
-        $(tile).text(nexTurn);
+        $(tile).html(nexTurn);
 
     }
 }
@@ -58,5 +60,5 @@ function calcvictory(){
 
 function setturn(tagname,value){
 
-    $(tagname).text = value;
+    $(tagname).html = value;
 }
