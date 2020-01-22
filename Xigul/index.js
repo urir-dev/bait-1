@@ -12,7 +12,7 @@ $(document).ready(function () {
         console.log(getAttr(this,'data-tile'))
         if ($(this).attr('text') != ""){
 
-            setturn(this,nexTurn);
+            markStep(this);
 
         }
     });
@@ -27,10 +27,10 @@ function setNextTitle() {
 
 }
 
-function markturn(element) {
-    if (!$(element).text()){
+function markStep(tile) {
+    if (!$(tile).text()){
 
-        
+        $(tile).text(nexTurn);
 
     }
 }
