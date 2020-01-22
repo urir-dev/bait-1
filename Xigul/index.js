@@ -1,6 +1,10 @@
-var nexTurn = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>',
+var Turn = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>',
+whosTurn = ''
 xTurn = 'x',
-oTurn = 'O';
+oTurn = 'O',
+firsPlayer = 0,
+secondPlayer = 0;
+
 srcOfPizza = '<img src=https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg size=auto>'
 srcOfPokemon = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>'
 
@@ -15,6 +19,7 @@ $(document).ready(function () {
         if ($(this).attr('text') != ""){
 
             markStep(this);
+            calcvictory(this);
 
         }
     });
@@ -32,7 +37,7 @@ function setNextTitle() {
 function markStep(tile) {
     if (!$(tile).text()){
 
-        $(tile).html(nexTurn);
+        $(tile).html(Turn);
 
     }
 }
@@ -51,9 +56,16 @@ function setAttr(tagname,attr,value){
 
 }
 
-function calcvictory(){
+function calcvictory(tile){
 
     console.log(score)
+    
+        if (whosTurn == 'x'){
+
+            firsPlayer =  firsPlayer + (getAttr(this,'vicVal'));
+
+        }
+        
 
 
 }
