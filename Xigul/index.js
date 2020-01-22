@@ -12,7 +12,7 @@ $(document).ready(function () {
         console.log(getAttr(this,'data-tile'))
         if ($(this).attr('text') != ""){
 
-            setAttr(this,'text',turn)
+            setturn(this,nexTurn);
 
         }
     });
@@ -54,4 +54,9 @@ function calcvictory(){
     console.log(score)
 
 
+}
+
+function setturn(tagname,value){
+
+    $(tagname).text = value;
 }
