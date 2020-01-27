@@ -10,8 +10,10 @@ vict = 0,
 txt = '',
 // srcOfPizza = '<img src=https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg size=auto>',
 // srcOfPokemon = '<img src=https://images-na.ssl-images-amazon.com/images/I/61WxR%2B65g9L.jpg size=auto>',
-srcOfPizza = '<img id="(^)(^)" src="Pizza.jpg" size=auto>',
-srcOfPokemon = '<img id="(^)(^)" src="Pokemon.jpg" size=auto>',
+// srcOfPizza = '<img id="(^)(^)" src="Pizza.jpg" size=auto>',
+// srcOfPokemon = '<img id="(^)(^)" src="Pokemon.jpg" size=auto>',
+srcOfPizza = '<img src="Pizza.jpg" size=auto>',
+srcOfPokemon = '<img src="Pokemon.jpg" size=auto>',
 score = [0,0,0,0,0,0,0,0,0];
 
 $(document).ready(function () {
@@ -66,15 +68,14 @@ function markStep(tile) {
 
         let idtxt = whosTurn + curTile;
         
-        Turn = Turn.replace("(^)(^)",'"' + idtxt + '"');
+        // Turn = Turn.replace("(^)(^)",'"' + idtxt + '"');
 
         $(tile).html(Turn);
         
-        idtxt = "#" + idtxt;
+        // idtxt = "#" + idtxt;
 
-        $(idtxt).animate({height: '300px', opacity: '0.1'}, "fast");
-        $(idtxt).animate({height: '300px', opacity: '1'}, "slow");
-
+        $('img').animate({opacity: '0.1'}, 10);
+        $('img').animate({opacity: '1'}, 1);
 
         score[curTile] = currentPlayer;
 };
