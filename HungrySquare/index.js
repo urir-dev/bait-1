@@ -1,13 +1,37 @@
+
+
 $(document).ready(function () {
     console.log("$document ready")
 
-    $(document).keypress(function() {
+    $(document).keypress(function(event) {
         console.log( "Handler for .keypress() called." );
-        if(e.keyCode==13){
+        
+            {
 
-            alert("E was pressed");
+                if(event.key=='a'){
 
-        }
+                    moveLeft('squarey',10);
+                    squash('squarey');
+                }
+                if(event.key=='d'){ 
+
+                    moveRight('squarey',10);
+                    squash('squarey');
+
+                }
+                if(event.key=='w'){ 
+
+
+                    moveUp('squarey',10);
+
+                }
+                if(event.key=='s'){ 
+
+                    moveDown('squarey',10);
+
+                }
+
+            }
       });
 
     // $('.window').click(function (e) { 
