@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+    <div>
+        <div class="form">
+            <h1 class='title'>Please choose a page and users per page</h1>
+        </div>
+
+        <div class="formX">
+
+            <div class="inpfield"> 
+                <label>Page</label>
+                <Input id="page" name="page" type="text">
+            </div>
+        
+
+            <div class="inpfield"> 
+                <label>Users Per Page</label>
+                <Input id="userNum" name="userNum" type="text">
+            </div>
+
+            <button id='btn-get' class="button">GET</button> 
+
+        </div>      
+
+        <div class="form">
+
+            <table>
+                <tbody id="tavla">
+         
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

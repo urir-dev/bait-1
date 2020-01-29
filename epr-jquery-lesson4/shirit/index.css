@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h3 {
+  text-align: center;
+}
+body {
+  background-color: beige;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  place-content: center;
+}
+.tile {
+  height: 100px;
+  width: 100px;
+  background-color: coral;
+  border: solid black 1px;
+  font-size: 50px;
+  display: grid;
+  place-content: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.table {
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>😎Dom </title>
+</head>
+
+<body>
+    <h2>Academka</h2>
+
+    <script>
+        let id = 100343;
+
+        let arr = ["a", "b", "c"]
+
+        console.log(arr.indexOf("d") !== -1);
+        document.getElementsByTagName('body')[0]
+        document.getElementsByTagName('p')[0]
+        document.getElementById('id')
+        document.getElementsByClassName('class')[0]
+        let c = 1;
+        let user = {
+            id: 0
+        }
+        let see;
+        let see1;
+        let b = false;
+        b = 1 == "1"; // true 
+        b = 1 === "1"; // false 
+        b = user.id = "1"; // "1" 
+        b = see; // "1" 
+        b = see === see1; // true 
+        b = see == null; // true 
+        b = see === null; // false 
+        b = see == ""; // false 
+        b = see === ""; // false 
+        b = !!user.id;
+    //    let { id } = user;
+        b = !!id;
+        b = !!name;
+        if (!!id) {
+
+
+        }
+        if (b) {
+            // STATE A
+            // will not run
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+            console.log('A');
+            console.log('b', b);
+
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+
+        } else {
+
+            // STATE B
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+            console.log('B');
+            console.log('b', b);
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+            // will run 
+        }
+
+
+        console.groupEnd();
+        window.name;
+
+    </script>
+    <!-- <script src="user.js"></script> -->
+</body>
+
+</html>
