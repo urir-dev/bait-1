@@ -44,18 +44,6 @@ $(document).ready(function () {
             }
       });
 
-      function popApple() {
-
-    
-        let appleX = getRndInteger
-        let appleY = getRndInteger
-    
-      // do some stuff...
-      // no need to recall the function (it's an interval, it'll loop forever)
-      setInterval(popApple, 8000);
-    
-      }
-
     // $('.window').click(function (e) { 
 
     //     e.preventDefault();
@@ -98,3 +86,15 @@ $(document).ready(function () {
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }
+
+function popApple() {
+
+    
+    let appleX = getRndInteger()
+    let appleY = getRndInteger
+
+  // do some stuff...
+  // no need to recall the function (it's an interval, it'll loop forever)
+  setInterval(popApple, 8000);
+
+  }

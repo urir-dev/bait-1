@@ -51,9 +51,9 @@ function postToServer(user) {
 
 function buildTable(jsn)
 {
-    for(i = 0;i < jsn.length;i++){
+    for(let i = 0;i < jsn.length;i++){
 
-        setrow(parsedStr[i]);
+        setrow(jsn[i]);
 
     };
 
@@ -63,11 +63,9 @@ function setrow(str){
 
     $('#tavla').append('<tr>')
 
-    let parsedStr = str.split(",");
+    let 
 
-    for(i = 0;i < parsedStr.length;i++){
 
-        $('#tavla').append('<td>' + parsedStr[i] + '</td>');
 
     };
 

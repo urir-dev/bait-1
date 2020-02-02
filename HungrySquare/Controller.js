@@ -1,5 +1,7 @@
 
-
+var borderPos,
+borderHeight,
+borderWidth;
 
 
 function moveUp(objectName,amount){
@@ -53,11 +55,12 @@ function squash(objectName){
 
 function chkborder(objectName,direction){
 
-    var objectPos = $('#' + objectName).position(),
-    borderPos = $('.border').position(),
+    let objectPos = $('#' + objectName).position(),
     objectHeight = $('#' + objectName).height(),
+    objectWidth = $('#' + objectName).width();
+    
+    borderPos = $('.border').position(),
     borderHeight = $('.border').height(),
-    objectWidth = $('#' + objectName).width(),
     borderWidth = $('.border').width();
 
     switch(direction) {
@@ -105,7 +108,7 @@ function chkborder(objectName,direction){
       } 
 
    
-}
+};
 
 function chkCollision(idA,objectAName,idB,objectBName){
 
@@ -121,12 +124,22 @@ function chkCollision(idA,objectAName,idB,objectBName){
 
         if (objectAPos.left >= objectBPos.left && objectAPos.left + objectAWidth <= objectBPos.left + objectBWidth){
 
-            return idA;idB;true;
+            return true;
+        }
+
+    }
+
+    if (objectAPos.top +  objectAHeight >= objectBPos.top && objectAPos.top + objectAHeight <= objectBPos.top + objectBHeight){
+
+        if (objectAPos.left >= objectBPos.left && objectAPos.left + objectAWidth <= objectBPos.left + objectBWidth){
+
+            return true;
+        }
 
     }
 
 
-}
+};
 
 
 //     if (objectPos.top
@@ -182,3 +195,4 @@ function chkCollision(idA,objectAName,idB,objectBName){
     //         break;
     //     default:
     //         return false;
+// }
