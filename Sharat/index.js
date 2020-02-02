@@ -50,6 +50,8 @@ function postToServer(user) {
 
 
 function buildTable(jsn)
+
+if (res){
 {
     for(let i = 0;i < jsn.length;i++){
 
@@ -57,6 +59,7 @@ function buildTable(jsn)
 
     };
 
+}
 };
 
 function setrow(str){
