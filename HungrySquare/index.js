@@ -2,8 +2,9 @@
 // set 
 
 var appleLocations = [];
-var tid = setInterval(popApple, 8000);
-
+var tid = setInterval(popApple, 8000),
+appleIds = 0;
+appleCount = 1;
 
 function abortTimer() { // to be called when you want to stop the timer
   clearInterval(tid);
@@ -44,43 +45,6 @@ $(document).ready(function () {
             }
       });
 
-    // $('.window').click(function (e) { 
-
-    //     e.preventDefault();
-    //     console.log(getAttr(this,'data-tile'))
-    //     curTile = $(this).attr('data-tile');
-    //     txt = $(this).html();
-    //     if (txt == ""){
-
-    //         markStep(this);
-    //         tieChk++;
-
-    //         let winmark = calcVictory();            
-    //         if (winmark == 0) 
-    //         {
-    //             swithcTurn();
-    //             setNextTitle();
-    //         }
-    //         else
-    //         {
-    //             if (winmark == 3) 
-
-    //                 setTie();
-
-    //             else{
-    //                 setVictory();
-    //             }
-                
-    //             location.reload();
-
-    //         }
-            
-
-    //     }
-    // });
-
-
-    // alert(id);
 });
 
 function getRndInteger(min, max) {
@@ -90,11 +54,18 @@ function getRndInteger(min, max) {
 function popApple() {
 
     
-    let appleX = getRndInteger()
-    let appleY = getRndInteger
+    let appleX = getRndInteger(borderPos.left + 50,borderPos.left - 50);
+    let appleY = getRndInteger(borderPos.top + 50,borderPos.top - 50);
+    let appleArray = [appleX,appleY,'apple' + appleIds ++];
+
+    appleLocations.push([appleArray]);
+
+    appleCount ++;
 
   // do some stuff...
   // no need to recall the function (it's an interval, it'll loop forever)
   setInterval(popApple, 8000);
+
+  return;
 
   }
