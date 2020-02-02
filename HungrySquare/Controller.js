@@ -117,6 +117,13 @@ function chkCollision(idA,objectAName,idB,objectBName){
     objectBWidth = $('#' + objectBName).width();
 
 
+    if (objectAPos.top >= objectBPos.top && objectAPos.top + objectAHeight <= objectBPos.top + objectBHeight){
+
+        if (objectAPos.left >= objectBPos.left && objectAPos.left + objectAWidth <= objectBPos.left + objectBWidth){
+
+            return idA;idB;true;
+
+    }
 
 
 }
