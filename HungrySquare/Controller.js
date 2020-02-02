@@ -106,3 +106,72 @@ function chkborder(objectName,direction){
 
    
 }
+
+function chkCollision(idA,objectAName,idB,objectBName){
+
+    var objectAPos = $('#' + objectAName).position(),
+    objectAHeight = $('#' + objectAName).height(),
+    objectAWidth = $('#' + objectAName).width(),
+    objectBPos = $('#' + objectBName).position(),
+    objectBHeight = $('#' + objectBName).height(),
+    objectBWidth = $('#' + objectBName).width();
+
+
+
+
+}
+
+
+//     if (objectPos.top
+
+//     if (objectPos.top <= lowBorder && (objectPos.left >= leftBorder || objectPos.right <= rightBorder)){
+//         return true;
+//     }
+//     else if (objectPos.top + objectHeight <= lowBorder && (objectPos.left >= leftBorder || objectPos.right <= rightBorder)){
+//         return true;
+//     }
+
+// }
+
+    // switch(direction) {
+    //     case "up":
+
+    //         if (objectPos.top <= borderPos.top) {
+
+    //             squash(objectName);
+    //             return true;
+                
+        
+    //         }
+    //       // code block
+    //         break;
+    //     case "down":
+
+
+    //         if (objectPos.top + objectHeight >= borderPos.top + borderHeight) {
+                
+    //             squash(objectName);
+    //             return true;
+        
+    //         }
+    //       // code block
+    //         break;
+    //     case "left":
+
+    //         if (objectPos.left <= borderPos.left) {
+
+    //             squash(objectName);
+    //             return true;
+        
+    //         }
+    //         break;
+    //     case "right":
+    //         if (objectPos.left + objectWidth >= borderPos.left + borderWidth) {
+
+    //             squash(objectName);
+    //             return true;
+        
+    //         }
+    //         break;
+    //     default:
+    //         return false;

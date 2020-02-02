@@ -1,4 +1,14 @@
 
+// set 
+
+var appleLocations = [];
+var tid = setInterval(popApple, 8000);
+
+
+function abortTimer() { // to be called when you want to stop the timer
+  clearInterval(tid);
+}
+
 
 $(document).ready(function () {
     console.log("$document ready")
@@ -33,6 +43,18 @@ $(document).ready(function () {
 
             }
       });
+
+      function popApple() {
+
+    
+        let appleX = getRndInteger
+        let appleY = getRndInteger
+    
+      // do some stuff...
+      // no need to recall the function (it's an interval, it'll loop forever)
+      setInterval(popApple, 8000);
+    
+      }
 
     // $('.window').click(function (e) { 
 
@@ -72,3 +94,7 @@ $(document).ready(function () {
 
     // alert(id);
 });
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
