@@ -88,7 +88,7 @@
 .applewrapper
 {
     
-    outline: solid 1px blue;
+    /* outline: solid 1px blue; */
     grid-column-gap: 1px;
     display: grid;
     grid-template-rows: repeat(3,1fr);
@@ -138,7 +138,7 @@
 {
     /* outline: solid 1px blue; */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     place-content: center;
     grid-column-gap: 1px;
 }
@@ -157,6 +157,16 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fe864', endColorstr='#1f3b08', GradientType=0 );
 
     border-radius: 30%;
-    height: 8px;
-    width: 10px;
+    height: 6px;
+    width: 8px;
+}
+
+.stick
+{
+
+    
+    background: rgb(73, 48, 24);
+    border-radius: 10%;
+    height: 6px;
+    width: 3px;
 }
