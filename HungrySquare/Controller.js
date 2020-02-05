@@ -1,7 +1,7 @@
 
-var borderPos,
-borderHeight,
-borderWidth;
+var borderPos = $('.border').position(),
+borderHeight = $('.border').height(),
+borderWidth = $('.border').width();
 
 
 function moveUp(objectName,amount){
@@ -59,8 +59,8 @@ function chkborder(objectName,direction){
     objectHeight = $('#' + objectName).height(),
     objectWidth = $('#' + objectName).width();
     
-    borderPos = $('.border').position(),
-    borderHeight = $('.border').height(),
+    borderPos = $('.border').position();
+    borderHeight = $('.border').height();
     borderWidth = $('.border').width();
 
     switch(direction) {
