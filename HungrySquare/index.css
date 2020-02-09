@@ -115,9 +115,9 @@
     -webkit-box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.66); 
     box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.66);
     -moz-box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.66);
-    border-radius: 25%;
+    border-radius: 40%;
     height: 18px;
-    width: 18px;
+    width: 20px;
     display: grid;
 
     grid-template-columns: auto auto;
@@ -140,7 +140,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     place-content: center;
-    grid-column-gap: 1px;
+    /* grid-column-gap: 1px; */
 }
 
 .leaf
@@ -168,5 +168,5 @@
     background: rgb(73, 48, 24);
     border-radius: 10%;
     height: 6px;
-    width: 3px;
+    width: 2px;
 }
