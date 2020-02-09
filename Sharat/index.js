@@ -55,23 +55,24 @@ if (res){
 {
     for(let i = 0;i < jsn.length;i++){
 
-        setrow(jsn[i]);
+        setrow(i);
 
     };
 
 }
 };
 
-function setrow(str){
+function setrow(i){
 
-    $('#tavla').append('<tr>')
+    let objrow = jsn[i];
 
-    let 
+    let id = objrow.id
+    let firstName = objrow.first_name;
+    let lastName = objrow.last_name;
+    let email = objrow.email;
+    let avatar = objrow.avatar;
 
-
-
-    };
-
-    $('#tavla').append('</tr>')
+    $('#tavla').append('<tr>' + '<td>' + id + '</td>' + '<td>' + firstName + '</td>'  + '<td>' + lastName + '</td>'
+    + '<td>' + email + '</td>' + ' <img src="' + avatar + '"></td>' + '</tr>');
 
 };
